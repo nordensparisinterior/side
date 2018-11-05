@@ -108,6 +108,45 @@
             position: relative;
             left: 3%;
         }
+        
+        
+        @media only screen 
+            and (device-width : 375px) 
+            and (device-height : 812px) 
+            and (-webkit-device-pixel-ratio : 3) {  
+    .meny {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        .menyknapp {
+            position: relative;
+            left: 56px;
+        }
+        .menyknapp a {
+            display: block;
+            font-family: monospace;
+            font-size: 15px;
+            color: black;
+            text-align: center;
+            padding: 14px 10px;
+            text-decoration: none;
+        }
+            .logo img {
+                width: 80px;
+                height: 80px;
+                position: relative;
+                left: 38%;
+            }
+            .info {
+                position: relative;
+                text-align: center;
+                left: 0px;
+        }
+        }
+        
+        
         @media(max-width:768px) {
         body {
             overflow-x: hidden;
@@ -242,12 +281,14 @@
     
     <div class="banner">  
     <div class="banner-innhold">
-        <a href="index.html"><img style="height: 80px;
-         width: 80px;"src="Bilder/N.png"></a>
     <h1>Nordens Paris Interiør UB<div class="litenh1">Vi tar byggeindustriens avfallmaterialer og gir det nytt liv for å dekorere ditt hjem og kontor i Nordens Paris!</div></h1>
-    
         </div>
     </div>
+    <a href="index.html">
+             <div class="logo">
+                 <img src="Bilder/N.png" alt="Logo">
+        </div>
+    </a>
     <hr>
             <ul class="meny">
                 <div class="menyknapp">
