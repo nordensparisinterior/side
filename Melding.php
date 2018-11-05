@@ -1,9 +1,10 @@
-<html>
-<body>
-
-Welcome <?php echo $_GET["name"]; ?><br>
-Your email address is: <?php echo $_GET["email"]; ?>
-
-</body>
-</html>
-                    
+<?php $name = $_POST['name'];
+$email = $_POST['email'];
+$message = $_POST['message'];
+$formcontent="From: $name \n Message: $message";
+$recipient = "simonpett@live.no";
+$subject = "Contact Form";
+$mailheader = "From: $email \r\n";
+mail($recipient, $subject, $formcontent, $mailheader) or die("Error!");
+echo "TAKK!";
+?>           
