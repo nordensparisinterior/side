@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono|Shadows+Into+Light" rel="stylesheet">
 <title>Elevbedrift</title>
     <style>
         body {
@@ -37,17 +38,17 @@
             font-size: 15px;
             font-family: monospace;;
         }
-        ul {
+        .meny {
             list-style-type: none;
             margin: 0;
             padding: 0;
             padding-left: 34%;
             overflow: hidden;
         }
-        li {
+        .menyknapp {
             float: left;
         }
-        li a {
+        .menyknapp a {
             display: block;
             font-family: monospace;
             font-size: 15px;
@@ -56,30 +57,26 @@
             padding: 14px 16px;
             text-decoration: none;
         }
-        li a:hover {
+        .menyknapp a:hover {
             background-color: #e6e6e4; 
         }
         .hovedbilde {
             position: relative;
-            left: 40%;
+            left: 10%;
             padding-top: 5%;  
-            z-index: 0;
         }
         .hovedbilde-s {
             display: none;
         }
         .tekst-boks {
-            position: absolute;;
-            bottom: 5%;
+            position: absolute;
+            bottom: 35%;
             right: 38%;
             background-color: white;
             padding-left: 10%;
             padding-right: 10%;
             padding-bottom: 5%;
             background-color: rgba(255, 255, 255, 0.54); 
-        }
-        .tekst-boks-s {
-            display: none;
         }
         .tekst-boks p {
             font-family: monospace;
@@ -107,7 +104,19 @@
             display: none;
             letter-spacing: 10px;
         }
-        
+        .om_oss {
+            position: relative;
+            left: 10%;
+            font-size: 20px;
+            width: 300px;
+            font-family: 'IBM Plex Mono', monospace;
+            word-spacing: -6px;
+            margin-top: 5%;
+        }
+        .om_oss h1 {
+            font-family: 'IBM Plex Mono', monospace; 
+            letter-spacing: 5px;
+        }
         @media(max-width:768px) {
         body {
             overflow-x: hidden;
@@ -242,35 +251,38 @@
     
     <div class="banner">  
     <div class="banner-innhold">
-        <a href=""><img style="height: 80px;
+        <a href="index.html"><img style="height: 80px;
          width: 80px;"src="Bilder/N.png"></a>
     <h1>Nordens Paris Interiør UB<div class="litenh1">Vi tar byggeindustriens avfallmaterialer og gir det nytt liv for å dekorere ditt hjem og kontor i Nordens Paris!</div></h1>
     
         </div>
     </div>
     <hr>
-            <ul>
+            <ul class="meny">
+                <div class="menyknapp">
            <li><a href="mer-info.html">Mer info</a></li>
+                </div>
+            <div class="menyknapp">   
            <li><a href="omoss.html">Om oss</a></li>
+                </div>
+                <div class="menyknapp">
            <li><a href="produkter.html">Produkter</a></li>
+                </div>
+                <div class="menyknapp">
            <li><a href="kontakt_oss.php.html">Kontakt oss</a></li>
+                </div>
+                <div class="menyknapp">
             <li><a href="ansatte.html">Våre ansatte</a></li>
+                    </div>
             </ul>
     <hr>
 
-    <div class="hovedbilde">
-    <img class="hovedbilde-s" src="Bilder/Bilde1.jpg"
-         height="500px";>
-        
-    <img class="hovedbilde-s" src="Bilder/Bilde2.jpg"
-         height="500px";>
-        
-    <img class="hovedbilde-s" src="Bilder/Bilde3.jpg"
-         height="500px";>
-        
-    <img class="hovedbilde-s" src="Bilder/Bilde4.jpg"
-         height="500px";>
-        </div>
+    <div class="om_oss">
+    <h1>Om oss:</h1>
+    <p>Vi er 4 ungdommer fra <b>Kvaløy Videregående Skole</b> som har startet opp et ungdomsbedrift i Emprenørskap og bedriftsutvikling. </p>
+    </div>
+
+    
     <br><br><br>
     <hr>
     
@@ -293,23 +305,22 @@ bilder();
 
 function bilder() {
     var i;
-    var x = document.getElementsByClassName("hovedbilde-s ");
+    var x = document.getElementsByClassName("hovedbilde-s");
     for (i = 0; i < x.length; i++) {
        x[i].style.display = "none";  
     }
     myIndex++;
     if (myIndex > x.length) {myIndex = 1}    
     x[myIndex-1].style.display = "block";  
-    setTimeout(bilder, 2000);
+    setTimeout(bilder, 4000);
 }
-        
-var myIndex = 0;
-kommentarer()
+        var myIndex = 0;
+kommentarer();
 
 function kommentarer() {
     var i;
     var x = document.getElementsByClassName("kundenes-anbefaling-tekst");
-    for (i = 2; i < x.length; i++) {
+    for (i = 0; i < x.length; i++) {
        x[i].style.display = "none";  
     }
     myIndex++;
@@ -318,6 +329,5 @@ function kommentarer() {
     setTimeout(kommentarer, 3000);
 }
     </script>
-
 </body>
-</html>
+</html> 
