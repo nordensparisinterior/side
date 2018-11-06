@@ -326,7 +326,7 @@
         <ul>
         <li>Innbyggere i <b><i>Nordens paris</i></b></li>
         <li>Hovedsakelig kvinner</li>
-        <li>Gaver</li>
+        <li>Alt fra barnefamilier til større kontorer</li>
     </ul>
     <br>
     <h1 style="font-family: monospace; letter-spacing: 5px;">Bærekraftighet:</h1>
@@ -345,49 +345,6 @@
     
     <br><br><br>
     <hr>
-    
-    <div class="kundenes-anbefaling">
-        <p><b>ANBEFALINGER:</b></p>
-        <div class="kundenes-anbefaling-tekst">
-        <p>Per: <i>"Fantastisk produkt"</i></p>
-        </div>
-        <div class="kundenes-anbefaling-tekst">
-            <p>Anders: <i>"Tjenesten er super"</i></p>
-        </div>
-        <div class="kundenes-anbefaling-tekst">
-            <p>Ida: <i>"Designet er nydelig!"</i></p>
-        </div>
-    </div>
-    
-    <script>
-    var myIndex = 0;
-bilder();
-
-function bilder() {
-    var i;
-    var x = document.getElementsByClassName("hovedbilde-s");
-    for (i = 0; i < x.length; i++) {
-       x[i].style.display = "none";  
-    }
-    myIndex++;
-    if (myIndex > x.length) {myIndex = 1}    
-    x[myIndex-1].style.display = "block";  
-    setTimeout(bilder, 4000);
-}
-        var myIndex = 0;
-kommentarer();
-
-function kommentarer() {
-    var i;
-    var x = document.getElementsByClassName("kundenes-anbefaling-tekst");
-    for (i = 0; i < x.length; i++) {
-       x[i].style.display = "none";  
-    }
-    myIndex++;
-    if (myIndex > x.length) {myIndex = 1}    
-    x[myIndex-1].style.display = "block";  
-    setTimeout(kommentarer, 3000);
-}
-    </script>
+  
 </body>
 </html> 
