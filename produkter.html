@@ -19,9 +19,6 @@
             padding: 20px;
             text-align: center;
         }
-        .banner img {
-            float: left;
-        }
         .banner-innhold h1 {
             font-size: 50px;
             padding: 0px;
@@ -60,54 +57,85 @@
         li a:hover {
             background-color: #e6e6e4; 
         }
-        .hovedbilde {
+        .logo img {
+            width: 80px;
+            height: 80px;
             position: relative;
-            left: 10%;
-            padding-top: 5%;  
-        }
-        .hovedbilde-s {
-            display: none;
-        }
-        .tekst-boks {
-            position: absolute;
-            bottom: 35%;
-            right: 38%;
-            background-color: white;
-            padding-left: 10%;
-            padding-right: 10%;
-            padding-bottom: 5%;
-            background-color: rgba(255, 255, 255, 0.54); 
-        }
-        .tekst-boks p {
-            font-family: monospace;
-            font-size: 30px;
-            letter-spacing: 4px;
-        }
-        .knapp a {
-            text-decoration: none;
-            display: block;
-            padding: 14px 20px;
-            background-color: black;
-            text-align: center;
-            opacity: 1;
-            color: white;
-            font-family: monospace;
-            font-size: 15px;
-            letter-spacing: 5px;
-        }
-        .kundenes-anbefaling {
-            font-size: 25px;
-        }
-        .kundenes-anbefaling-tekst {
-            font-size: 40px;
-            font-family: monospace;
-            display: none;
-            letter-spacing: 10px;
+            left: 48%;
         }
         .produkt img {
-            width: 30%;
+            height: 22px;
+            width: 25%;
             position: relative;
-            left: 20%;
+            left: 14%;
+            height: 420px;
+            border-width: 15px;
+            margin-right: 40px;
+            margin-bottom: 20px;
+            margin-top: 0px;
+        }
+        .produkttekst p {
+            font-family: 'Shadows Into Light', cursive;
+            letter-spacing: 8px;
+            font-size: 50px;
+            border-collapse: collapse;
+            margin-bottom:  0px;
+            display: block;
+            position: relative;
+            left: 14%;
+        }
+        .produkttekstinnhold {
+            font-size: 20px;
+            width: 60%;
+            border-collapse: collapse;
+            margin: 0px;
+            display: block;
+            left: 14%;
+            position: relative;
+        }
+        .overskrift_produkttekstinnhold {
+            position: relative;
+            left: 14%;
+            font-size: 25px;
+        }
+        @media only screen 
+            and (device-width : 375px) 
+            and (device-height : 812px) 
+            and (-webkit-device-pixel-ratio : 3) {  
+                html {
+                 width: 100%;
+                 margin: 0;
+                }
+        .ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        .li {
+            position: relative;
+            left: 56px;
+        }
+        .li a {
+            display: block;
+            font-family: monospace;
+            font-size: 15px;
+            color: black;
+            text-align: center;
+            padding: 14px 10px;
+            text-decoration: none;
+            
+        }
+        .logo img {
+            width: 80px;
+             height: 80px;
+            position: relative;
+            left: 133px;
+            }
+            .produkt img {
+            width: 80%;
+            position: relative;
+            left: 15%;
             height: 420px;
             border-width: 15px;
             margin-right: 40px;
@@ -119,31 +147,25 @@
             letter-spacing: 8px;
             font-size: 50px;
             border-collapse: collapse;
-            margin-bottom:  0px;
             display: block;
             position: relative;
-            left: 20%;
+            left: 15%;
         }
         .produkttekstinnhold {
             font-size: 20px;
-            width: 30%;
+            width: 50%;
             border-collapse: collapse;
             margin: 0px;
             display: block;
-            left: 20%;
+            left: 13%;
             position: relative;
-        }
+                }
         .overskrift_produkttekstinnhold {
             position: relative;
-            left: 20%;
+            left: 12%;
         }
-            width: 30%;
-            border-collapse: collapse;
-            margin: 0px;
-            display: block;
-            left: 20%;
-            position: relative;
         }
+        
         @media(max-width:768px) {
         body {
             overflow-x: hidden;
@@ -278,12 +300,12 @@
     
     <div class="banner">  
     <div class="banner-innhold">
-        <a href="index.html"><img style="height: 80px;
-         width: 80px;"src="Bilder/N.png"></a>
     <h1>Nordens Paris Interiør UB<div class="litenh1">Vi tar byggeindustriens avfallmaterialer og gir det nytt liv for å dekorere ditt hjem og kontor i Nordens Paris!</div></h1>
-    
         </div>
     </div>
+     <a href="index.html">
+             <div class="logo">
+                 <img src="Bilder/N.png" alt="Logo"> </div> </a>
     <hr>
             <ul>
            <li><a href="mer-info.html">Mer info</a></li>
@@ -319,49 +341,5 @@
     
     <br><br><br>
     <hr>
-    
-    <div class="kundenes-anbefaling">
-        <p><b>ANBEFALINGER:</b></p>
-        <div class="kundenes-anbefaling-tekst">
-        <p>Per: <i>"Fantastisk produkt"</i></p>
-        </div>
-        <div class="kundenes-anbefaling-tekst">
-            <p>Anders: <i>"Tjenesten er super"</i></p>
-        </div>
-        <div class="kundenes-anbefaling-tekst">
-            <p>Ida: <i>"Designet er nydelig!"</i></p>
-        </div>
-    </div>
-    
-    <script>
-    var myIndex = 0;
-bilder();
-
-function bilder() {
-    var i;
-    var x = document.getElementsByClassName("hovedbilde-s");
-    for (i = 0; i < x.length; i++) {
-       x[i].style.display = "none";  
-    }
-    myIndex++;
-    if (myIndex > x.length) {myIndex = 1}    
-    x[myIndex-1].style.display = "block";  
-    setTimeout(bilder, 4000);
-}
-        var myIndex = 0;
-kommentarer();
-
-function kommentarer() {
-    var i;
-    var x = document.getElementsByClassName("kundenes-anbefaling-tekst");
-    for (i = 0; i < x.length; i++) {
-       x[i].style.display = "none";  
-    }
-    myIndex++;
-    if (myIndex > x.length) {myIndex = 1}    
-    x[myIndex-1].style.display = "block";  
-    setTimeout(kommentarer, 3000);
-}
-    </script>
 </body>
 </html> 

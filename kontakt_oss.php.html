@@ -108,6 +108,93 @@
             position: relative;
             left: 3%;
         }
+        .logo img {
+                width: 80px;
+                height: 80px;
+                position: relative;
+                left: 48%;
+            }
+        
+         @media only screen 
+            and (device-width : 375px) 
+            and (device-height : 812px) 
+            and (-webkit-device-pixel-ratio : 3) {  
+    .meny {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        .menyknapp {
+            position: relative;
+            left: 56px;
+        }
+        .menyknapp a {
+            display: block;
+            font-family: monospace;
+            font-size: 15px;
+            color: black;
+            text-align: center;
+            padding: 14px 10px;
+            text-decoration: none;
+        }
+            .logo img {
+                width: 80px;
+                height: 80px;
+                position: relative;
+                left: 38%;
+            }
+            .om_oss {
+            position: relative;
+            left: 10%;
+            font-size: 20px;
+            width: 300px;
+            font-family: 'IBM Plex Mono', monospace;
+            word-spacing: -6px;
+            margin-top: 5%;
+            text-align: center;
+        }
+        .om_oss h1 {
+            font-family: 'IBM Plex Mono', monospace; 
+            letter-spacing: 5px;
+            text-align: center
+        }
+        }
+        
+        @media(max-width:768px) {
+        body {
+            overflow-x: hidden;
+        }
+        ul {
+        list-style-type: none;
+            margin: 0;
+            padding: 0;
+            padding-left: 30%;
+            overflow: hidden;
+            }
+        .hovedbilde {
+            left: 12%;
+            padding-top: 5%;  
+        }
+        .tekst-boks {
+            position: absolute;
+            bottom: 25%;
+            right: 32%;
+            background-color: white;
+            padding-left: 10%;
+            padding-right: 10%;
+            padding-bottom: 5%;
+            background-color: rgba(255, 255, 255, 0.54); 
+        }
+        .kundenes-anbefaling-tekst {
+            font-size: 25px;
+            font-family: monospace;
+            display: none;
+            letter-spacing: 10px;
+        }
+        }
+        
+        
         @media(max-width:768px) {
         body {
             overflow-x: hidden;
@@ -242,12 +329,12 @@
     
     <div class="banner">  
     <div class="banner-innhold">
-        <a href="index.html"><img style="height: 80px;
-         width: 80px;"src="Bilder/N.png"></a>
     <h1>Nordens Paris Interiør UB<div class="litenh1">Vi tar byggeindustriens avfallmaterialer og gir det nytt liv for å dekorere ditt hjem og kontor i Nordens Paris!</div></h1>
-    
         </div>
     </div>
+    <a href="index.html">
+             <div class="logo">
+                 <img src="Bilder/N.png" alt="Logo"></div></a>
     <hr>
             <ul class="meny">
                 <div class="menyknapp">
@@ -272,49 +359,5 @@
     
     <br><br><br>
     <hr>
-    
-    <div class="kundenes-anbefaling">
-        <p><b>ANBEFALINGER:</b></p>
-        <div class="kundenes-anbefaling-tekst">
-        <p>Per: <i>"Fantastisk produkt"</i></p>
-        </div>
-        <div class="kundenes-anbefaling-tekst">
-            <p>Anders: <i>"Tjenesten er super"</i></p>
-        </div>
-        <div class="kundenes-anbefaling-tekst">
-            <p>Ida: <i>"Designet er nydelig!"</i></p>
-        </div>
-    </div>
-    
-    <script>
-    var myIndex = 0;
-bilder();
-
-function bilder() {
-    var i;
-    var x = document.getElementsByClassName("hovedbilde-s");
-    for (i = 0; i < x.length; i++) {
-       x[i].style.display = "none";  
-    }
-    myIndex++;
-    if (myIndex > x.length) {myIndex = 1}    
-    x[myIndex-1].style.display = "block";  
-    setTimeout(bilder, 4000);
-}
-        var myIndex = 0;
-kommentarer();
-
-function kommentarer() {
-    var i;
-    var x = document.getElementsByClassName("kundenes-anbefaling-tekst");
-    for (i = 0; i < x.length; i++) {
-       x[i].style.display = "none";  
-    }
-    myIndex++;
-    if (myIndex > x.length) {myIndex = 1}    
-    x[myIndex-1].style.display = "block";  
-    setTimeout(kommentarer, 3000);
-}
-    </script>
 </body>
 </html> 
