@@ -302,41 +302,73 @@
             left: 12%;
         }   
         }
-        
-        
-        
-        @media(max-width:768px) {
-        body {
-            overflow-x: hidden;
-        }
-        ul {
-        list-style-type: none;
+         @media only screen 
+            and (min-device-width: 320px) 
+            and (max-device-height: 568px) 
+             and (-webkit-device-pixel-ratio: 2) {
+               html {
+                 width: 100%;
+                 margin: 0;
+                }
+        .ul {
+            list-style-type: none;
             margin: 0;
             padding: 0;
-            padding-left: 30%;
             overflow: hidden;
-            }
-        .hovedbilde {
-            left: 12%;
-            padding-top: 5%;  
         }
-        .tekst-boks {
-            position: absolute;
-            bottom: 25%;
-            right: 32%;
-            background-color: white;
-            padding-left: 10%;
-            padding-right: 10%;
-            padding-bottom: 5%;
-            background-color: rgba(255, 255, 255, 0.54); 
+        .li {
+            position: relative;
+            float: left;
         }
-        .kundenes-anbefaling-tekst {
-            font-size: 25px;
+        .li a {
+            display: block;
             font-family: monospace;
-            display: none;
-            letter-spacing: 10px;
+            font-size: 15px;
+            color: black;
+            text-align: center;
+            padding: 14px 10px;
+            text-decoration: none; 
         }
+        .logo img {
+            width: 80px;
+             height: 80px;
+            position: relative;
+            left: 102px;
+            }
+            .produkt img {
+            width: 80%;
+            position: relative;
+            left: 10%;
+            height: 420px;
+            border-width: 15px;
+            margin-right: 40px;
+            margin-bottom: 0px;
+            margin-top: 0px;
         }
+        .produkttekst p {
+            font-family: 'Shadows Into Light', cursive;
+            letter-spacing: 8px;
+            font-size: 50px;
+            border-collapse: collapse;
+            display: block;
+            position: relative;
+            left: 10%;
+        }
+        .produkttekstinnhold {
+            font-size: 20px;
+            width: 60%;
+            border-collapse: collapse;
+            margin: 0px;
+            display: block;
+            left: 13%;
+            position: relative;
+                }
+        .overskrift_produkttekstinnhold {
+            position: relative;
+            left: 12%;
+        }     
+        }
+        
         @media(max-width:425px) {
         body {
             overflow-x: hidden;

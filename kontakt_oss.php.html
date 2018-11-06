@@ -162,6 +162,37 @@
         }
         
         @media only screen 
+            and (min-device-width: 320px) 
+            and (max-device-height: 568px) 
+            and (-webkit-device-pixel-ratio: 2)  {
+              .meny {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        .menyknapp {
+            position: relative;
+            left: 10px;
+        }
+        .menyknapp a {
+            display: block;
+            font-family: monospace;
+            font-size: 15px;
+            color: black;
+            text-align: center;
+            padding: 14px 10px;
+            text-decoration: none;
+        }
+            .logo img {
+                width: 80px;
+                height: 80px;
+                position: relative;
+                left: 39%;
+            } 
+        }
+        
+        @media only screen 
             and (min-device-width: 414px) 
             and (max-device-height: 736px) 
             and (-webkit-device-pixel-ratio: 3) {
@@ -189,21 +220,6 @@
                 height: 80px;
                 position: relative;
                 left: 39%;
-            }
-            .om_oss {
-            position: relative;
-            left: 10%;
-            font-size: 20px;
-            width: 300px;
-            font-family: 'IBM Plex Mono', monospace;
-            word-spacing: -6px;
-            margin-top: 5%;
-            text-align: center;
-        }
-        .om_oss h1 {
-            font-family: 'IBM Plex Mono', monospace; 
-            letter-spacing: 5px;
-            text-align: center
         }
         }
         
@@ -236,21 +252,6 @@
                 position: relative;
                 left: 38%;
             }
-            .om_oss {
-            position: relative;
-            left: 10%;
-            font-size: 20px;
-            width: 300px;
-            font-family: 'IBM Plex Mono', monospace;
-            word-spacing: -6px;
-            margin-top: 5%;
-            text-align: center;
-        }
-        .om_oss h1 {
-            font-family: 'IBM Plex Mono', monospace; 
-            letter-spacing: 5px;
-            text-align: center
-        }      
         }
         
         
@@ -268,22 +269,6 @@
         .hovedbilde {
             left: 12%;
             padding-top: 5%;  
-        }
-        .tekst-boks {
-            position: absolute;
-            bottom: 25%;
-            right: 32%;
-            background-color: white;
-            padding-left: 10%;
-            padding-right: 10%;
-            padding-bottom: 5%;
-            background-color: rgba(255, 255, 255, 0.54); 
-        }
-        .kundenes-anbefaling-tekst {
-            font-size: 25px;
-            font-family: monospace;
-            display: none;
-            letter-spacing: 10px;
         }
         }
         

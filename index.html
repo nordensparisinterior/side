@@ -123,6 +123,45 @@
         }
         
         @media only screen 
+            and (min-device-width: 320px) 
+            and (max-device-height: 568px)
+            and (-webkit-device-pixel-ratio: 2) {
+           .hovedbilde {
+            position: relative;
+            z-index: 0;
+        }     
+                .bilde1 img {
+                    width: 300px;
+                    position: relative;
+                    right: 50px;
+                }  
+                .bilde2 img {
+                    width: 300px;
+                    position: relative;
+                    right: 50px;
+                }
+                .bilde3 img {
+                    width: 300px;
+                    position: relative;
+                    right: 50px;
+                }
+                .bilde4 img {
+                    width: 300px;
+                    position: relative;
+                    right: 50px;
+                }
+        li a {
+            display: block;
+            font-family: monospace;
+            font-size: 15px;
+            color: black;
+            text-align: center;
+            padding: 14px 8px;
+            text-decoration: none;
+        }     
+        }
+        
+        @media only screen 
             and (min-device-width: 414px) 
             and (max-device-height: 736px) 
             and (-webkit-device-pixel-ratio: 3) {
@@ -393,5 +432,7 @@ function bilder() {
 }
     </script>
 
+        </div>
+    </div>
 </body>
 </html>
