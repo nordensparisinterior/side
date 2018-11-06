@@ -70,6 +70,9 @@
                 position: relative;
                 left: 48%;
             }
+        .tekst {
+            width: 30%;
+        }
         @media only screen 
             and (min-device-width: 375px) 
             and (max-device-height: 667px) 
@@ -103,7 +106,10 @@
                 left: 85px;
                 width: 55%;
         }
-                
+                .tekst {
+                width: 100%;
+                line-height: 25px;
+        }
         }
         
         @media only screen 
@@ -137,11 +143,13 @@
             }
             .info {
                 position: relative;
-                left: px;
                 width: 55%;
         }
+                .tekst {
+                width: 300px;
+                line-height: 25px;
         }
-        
+        }
         @media only screen 
             and (min-device-width: 414px) 
             and (max-device-height: 736px) 
@@ -174,8 +182,12 @@
             }
             .info {
                 position: relative;
-                left: 85px;
-                width: 55%;
+                width: 95%;
+        }
+                .tekst {
+                font-size: 20px;
+                width: 300px;
+                line-height: 25px;
         }
         }
         
@@ -212,75 +224,15 @@
             .info {
                 position: relative;
                 text-align: center;
-                left: 0px;
+                }
+                
+                .tekst {
+                position: relative;
+                left: 20px;
+                font-size: 20px;
+                width: 300px;
+                line-height: 25px;
         }
-        }
-        
-        
-        @media(max-width:768px) {
-        body {
-            overflow-x: hidden;
-        }
-        ul {
-        list-style-type: none;
-            margin: 0;
-            padding: 0;
-            padding-left: 30%;
-            overflow: hidden;
-            }
-        .hovedbilde {
-            left: 12%;
-            padding-top: 5%;  
-        }
-        .tekst-boks {
-            position: absolute;
-            bottom: 25%;
-            right: 32%;
-            background-color: white;
-            padding-left: 10%;
-            padding-right: 10%;
-            padding-bottom: 5%;
-            background-color: rgba(255, 255, 255, 0.54); 
-        }
-        .kundenes-anbefaling-tekst {
-            font-size: 25px;
-            font-family: monospace;
-            display: none;
-            letter-spacing: 10px;
-        }
-        }
-        @media(max-width:425px) {
-        body {
-            overflow-x: hidden;
-        }
-        ul {
-        list-style-type: none;
-            margin: 0;
-            padding: 0;
-            padding-left: 15%;
-            overflow: hidden;
-            }
-        .tekst-boks {
-            position: absolute;
-            bottom: 20%;
-            right: 34%;
-            background-color: white;
-            padding-left: 0%;
-            padding-right: 0%;
-            padding-bottom: 0%;
-            background-color: rgba(255, 255, 255, 0.54); 
-        }
-        .tekst-boks p {
-            font-family: monospace;
-            font-size: 20px;
-            letter-spacing: 4px;
-        }
-        .kundenes-anbefaling-tekst {
-            font-size: 20px;
-            font-family: monospace;
-            display: none;
-            letter-spacing: 10px;
-        }  
         }
         @media(max-width:375px) {
         ul {
@@ -381,30 +333,21 @@
 
     <div class="info">
     <h1 style="font-family: monospace; letter-spacing: 5px;">Behovene vi dekker:</h1>
+        <p class="tekst">Våre produkter er laget for praktisk oppevaring. Disse er ment å gi en liten personlig tilfredstilling, og er den perfekte gaven til forskjellige anledninger!</p>
     <ul>
-        <li>Oppbevaring</li>
-        <li>Personlig tilfredsstilling</li>
-        <li>Gaver</li>
+
     </ul>
     <br>
-    <h1 style="font-family: monospace; letter-spacing: 5px;">Markedet</h1>
-        <ul>
-        <li>Innbyggere i <b><i>Nordens paris</i></b></li>
-        <li>Hovedsakelig kvinner</li>
-        <li>Alt fra barnefamilier til større kontorer</li>
-    </ul>
+    <h1 style="font-family: monospace; letter-spacing: 5px;">Markedet:</h1>
+        <p class="tekst">Produktene våre er for alle fantastiske innbyggerne i <i><b>Nordens Paris.</b></i> Produktene er elegante, og passer stilen til både hjem, kontor, fritidsboliger osv.</p>
     <br>
     <h1 style="font-family: monospace; letter-spacing: 5px;">Bærekraftighet:</h1>
-        <ul>
         <p><b>Miljømessig:</b></p>
-        <li>Gjenbruk</li>
-          <br><br>
-        <p><b>Sosialt:</b></p>    
-        <li>Donasjoner (20% til veldedig organisasjon)</li>
-        <br><br>
-        <p><b>Økonomisk:</b></p>
-        <li>Lave driftskostnader</li>
-    </ul>
+            <p class="tekst">Miljømessig så er produktene våre ganske så fine siden utstyre vi bruker faktisk er gjenbrukt fra byggeindustriens avfallsmaterialer.</p>
+        <br>
+        <p><b>Donasjon:</b></p>
+            <p class="tekst">Ved å handle hos oss kan du være sikker på at vi donerer 20% til en god sak.</p>
+
 
         </div>
     
