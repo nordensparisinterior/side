@@ -160,6 +160,53 @@
         }
         }
         
+        @media only screen 
+            and (min-device-width: 375px) 
+            and (max-device-height: 667px) 
+            and (-webkit-device-pixel-ratio: 2) {
+          .meny {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        .menyknapp {
+            position: relative;
+            left: 56px;
+        }
+        .menyknapp a {
+            display: block;
+            font-family: monospace;
+            font-size: 15px;
+            color: black;
+            text-align: center;
+            padding: 14px 10px;
+            text-decoration: none;
+        }
+            .logo img {
+                width: 80px;
+                height: 80px;
+                position: relative;
+                left: 38%;
+            }
+            .om_oss {
+            position: relative;
+            left: 10%;
+            font-size: 20px;
+            width: 300px;
+            font-family: 'IBM Plex Mono', monospace;
+            word-spacing: -6px;
+            margin-top: 5%;
+            text-align: center;
+        }
+        .om_oss h1 {
+            font-family: 'IBM Plex Mono', monospace; 
+            letter-spacing: 5px;
+            text-align: center
+        }      
+        }
+        
+        
         @media(max-width:768px) {
         body {
             overflow-x: hidden;

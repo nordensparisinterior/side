@@ -60,50 +60,6 @@
         .menyknapp a:hover {
             background-color: #e6e6e4; 
         }
-        .hovedbilde {
-            position: relative;
-            left: 10%;
-            padding-top: 5%;  
-        }
-        .hovedbilde-s {
-            display: none;
-        }
-        .tekst-boks {
-            position: absolute;
-            bottom: 35%;
-            right: 38%;
-            background-color: white;
-            padding-left: 10%;
-            padding-right: 10%;
-            padding-bottom: 5%;
-            background-color: rgba(255, 255, 255, 0.54); 
-        }
-        .tekst-boks p {
-            font-family: monospace;
-            font-size: 30px;
-            letter-spacing: 4px;
-        }
-        .knapp a {
-            text-decoration: none;
-            display: block;
-            padding: 14px 20px;
-            background-color: black;
-            text-align: center;
-            opacity: 1;
-            color: white;
-            font-family: monospace;
-            font-size: 15px;
-            letter-spacing: 5px;
-        }
-        .kundenes-anbefaling {
-            font-size: 25px;
-        }
-        .kundenes-anbefaling-tekst {
-            font-size: 40px;
-            font-family: monospace;
-            display: none;
-            letter-spacing: 10px;
-        }
         .info {
             position: relative;
             left: 3%;
@@ -114,6 +70,44 @@
                 position: relative;
                 left: 48%;
             }
+        
+        @media only screen 
+            and (min-device-width: 375px) 
+            and (max-device-height: 667px) 
+            and (-webkit-device-pixel-ratio: 2) {   .meny {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        .menyknapp {
+            position: relative;
+            left: 56px;
+        }
+        .menyknapp a {
+            display: block;
+            font-family: monospace;
+            font-size: 15px;
+            color: black;
+            text-align: center;
+            padding: 14px 10px;
+            text-decoration: none;
+        }
+            .logo img {
+                width: 80px;
+                height: 80px;
+                position: relative;
+                left: 38%;
+            }
+            .info {
+                position: relative;
+                left: 85px;
+                width: 55%;
+        }
+                
+        }
+        
+        
         
         @media only screen 
             and (device-width : 375px) 
